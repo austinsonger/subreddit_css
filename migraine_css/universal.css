@@ -1,0 +1,68 @@
+/* CSS by ramma314, adapted from CSS by iamducky with much help from /r/csshelp! */
+
+/**** CSS Information - Yes, you can steal this code, as long as credit is given. ****/
+/*Most elements should be commented to specify their function*/
+/*Themes can be easily modified by identifying colours codes to adjust, then using find and replace on the section for that theme. */
+/*A new theme can be created simply by copying a full lang() section and setting colour codes, find and replace works best. */
+
+/* Place this in the sidebar to get a theme selector.
+	The code below can insert images in the sidebar as well.
+##### [](http://reddit.com/r/chronicpain/ "Default Theme!")
+
+##### [](http://li.reddit.com/r/chronicpain/ "Light Theme!")
+
+##### [](http://dr.reddit.com/r/chronicpain/ "Dark Theme!")
+*/
+
+/* Universal stylesheet, or things which ignore the lang() setting */
+
+/* Theme selector flair */
+.bacon-dark_theme{ background-position: 0 0; width: 180px; height: 25px; } 
+.bacon-default_theme{ background-position: 0 -75px; width: 180px; height: 25px; } 
+.bacon-light_theme{ background-position: 0 -150px; width: 180px; height: 25px; }
+
+/* replace 'readers' with something else*/
+.subscribers .word {
+display: none;
+}  
+.subscribers .number::after {
+content: " migraineurs";
+}
+
+/* replace 'online readers' with something else*/
+.users-online .word {
+display: none;
+}  
+.users-online .number::after {
+content: " migraineurs here now";
+}
+
+.side a[href="http://reddit.com/r/migraine/"] {
+display: inline-block;
+height: 25px;
+width: 180px;
+background-image: url(%%bacon-image%%); background-repeat: no-repeat; background-position: 0px -75px;
+}
+.side a[href="http://li.reddit.com/r/migraine/"] {
+display: inline-block;
+height: 25px;
+width: 180px;
+background-image: url(%%bacon-image%%); background-repeat: no-repeat; background-position: 0px -150px;
+}
+.side a[href="http://dr.reddit.com/r/migraine/"] {
+display: inline-block;
+height: 25px;
+width: 180px;
+background-image: url(%%bacon-image%%); background-repeat: no-repeat; background-position: 0px 0px;
+}
+
+/* Fix the subreddit name so images don't appear! */
+.side .titlebox .redditname a {
+    background: none;
+    display: block;
+}
+
+/* Replaces dotted line with solid thin line */
+.comment .child {
+    border-left: 1px inset #DDDDFF;
+}

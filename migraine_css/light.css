@@ -1,0 +1,209 @@
+/* Light style sheet v.2.0 */
+/* start light stylesheet *//* start light stylesheet */
+/* start light stylesheet *//* start light stylesheet #fcf1ea*/
+body:lang(li) {background-color: #fcf1ea; position: relative; }
+
+/*page header and username area*/
+ /*Header color*/
+#header-bottom-left:lang(li) { background-color: #f2e3da;
+}
+/* User Bar */
+#header-bottom-right:lang(li) { background-color: #fcf1ea;
+}
+
+#userbarToggle:lang(li) {
+ color: gray!important;
+ background-color: #fcf1ea!important;
+ border-right: 1px solid #fcf1ea!important;
+}
+
+/* Text color user-name top right */
+div#header-bottom-right:lang(li) a
+{
+text-decoration: none;
+color: #4c71b3;
+}
+
+/* Rounded frame around new, top, saved, etc... buttons */
+/* saved colour codes */
+#header .tabmenu:lang(li) {
+    margin-left: 20px;
+    background-color: #f2c782;
+    padding: 5px 8px;
+    -moz-border-top-left-radius: 8px !important;
+    -webkit-border-top-left-radius: 8px !important;
+    border-top-left-radius: 8px !important;
+    -moz-border-top-right-radius: 8px !important;
+    -webkit-border-top-right-radius: 8px !important;
+    border-top-right-radius: 8px !important;
+    border: 1px solid #999;
+    border-bottom: 0;
+    }
+
+/*TEXT options for saved, new, top, etc menu */
+#header .tabmenu:lang(li) a {
+    background: transparent;
+    border: 0;
+    font-weight: 500;
+    color: #5a5555
+    }
+/* selected color and hover color for text set above. */
+#header .tabmenu:lang(li) .selected a, #header .tabmenu:lang(li) a:hover {
+    color:#4c71b3
+}
+
+/* START Submit new link button & other button START*/
+ .btn:lang(li), button:lang(li), .side:lang(li) a[href*='/#btn'] {
+    background-color:#f2c782;
+    border:none;
+    color:#5a5555;
+    padding:4px;
+    margin:4px 4px 4px 0;
+    cursor:pointer;
+    font-size:12px;
+    font-family:arial,helvetica,sans-serif;
+    -moz-border-radius:1px;
+    -webkit-border-radius:1px;
+    -o-border-radius:1px;
+    -ms-border-radius:1px;
+    -khtml-border-radius:1px;
+    border-radius:1px;
+}
+/* Submit new link button & other button cont. - Sets color, border, size, etc. */
+.morelink:lang(li) {
+    border:none;
+    border-left:5px solid #ff9f30;
+    text-align: center;
+    background-color: #f2c782;
+    background-image: none;
+    height:28px;
+}
+/* .nub thing removes weird shaped end piece */
+.morelink:lang(li) .nub:lang(li), .morelink:lang(li) ~ .spacer:lang(li) {
+    display: none;
+}
+/* This sets the font options for the submit new link buttons */
+.morelink:lang(li) a {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light","Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    letter-spacing:0px;
+    padding-left: 8px;
+    color:#5a5555;
+}
+
+.sidecontentbox:lang(li) .content {
+    padding: 5px;
+    border:none;
+    background-color:#efefef;
+}
+.sidecontentbox:lang(li) .title:lang(li) h1 {
+    display:inline-block;
+    width:284px;
+    border-left:6px solid #ff9f30;
+    text-align: left;
+    background-color: #fcf1ea;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light","Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-size:15px;
+    letter-spacing:0px;
+    padding:2px;
+    padding-left: 8px;
+    color:#5a5555;
+    text-transform:lowercase;
+    line-height:27px;
+}
+
+/*Search bar*/
+.side:lang(li) .spacer:lang(li) input[type=text]{
+  padding-top:3px!important;
+  padding-bottom:3px!important;
+  background:#fcf1ea;
+  /*box-shadow:0px 0px 8px #37B!important;*/
+  border:1px solid gray!important;
+  color: #5a5555;
+}
+
+/**LINK COLOR FOR SUBMITTED POSTS*/
+.title.click:lang(li), .title:visited:lang(li) { color:#937773 !important; }
+.title:link:lang(li) { color:#3f5d84 !important; }
+
+/* Comment boxes */
+/*Text color of comments */
+.md:lang(li) p {
+      color:#5a5555;
+}
+/* Colour settings for self post text box. */
+.thing:lang(li) .usertext-body:lang(li) .md:lang(li) {
+background-color: #f2e3da!important;
+border-color: #fcf1ea;
+color:#5a5555;
+}
+
+/*username color*/
+.author:lang(li) {color: #4c71b3!important;}
+
+/* SIDEBAR! *//* SIDEBAR! *//* SIDEBAR! */
+/* SIDEBAR! *//* SIDEBAR! *//* SIDEBAR! */
+/* Subreddit name color */
+.redditname:lang(li) a {
+font-size: 100%; 
+color: #5a5555;
+}
+
+/*moderator box?*/
+/*Moderator box colour and transparency */
+.sidecontentbox:lang(li) .content { background: #f2e3da;
+}
+.icon-menu:lang(li) a { background:transparent;
+}
+
+/*Sidebar bar border and whatnot*/
+.side:lang(li) {
+    background-color: #fcf1ea;
+    color:#5a5555;
+    border-style: none;
+    border-width: 0px;
+    float: right;
+    margin: 5px 5px 0;
+    padding: 3px;
+    }
+
+/*text colors in sidebar*/
+.side:lang(li) {color: #5a5555;}
+
+/* Post info box colours */
+.linkinfo:lang(li), .titlebox:lang(li) {
+  background-color: transparent;
+  border: 1px solid #000;
+  padding: 4px;
+}
+/*show my flair box bg colour */
+.titlebox form.flairtoggle {
+    background: transparent;
+    color: #5a5555;
+}
+
+/*.titlebox:lang(lr) .leavecontributor-button:lang(li) .option:lang(li) {
+    background-color: transparent;
+}*/
+
+
+
+/* HOLY MOTHER OF GOD WHAT THE FUCK DOES THIS DO?! */
+/* Oh... it's just some babely junk that makes comments look better for RES users. Those fuckers. Thanks RES, we <3 you! */
+/* AKA, overrides the commentBoxes option that ruins dark themes. */
+.comments-page:lang(li) .comment,
+.comments-page:lang(li) .comment .comment,
+.comments-page:lang(li) .comment .comment .comment,
+.comments-page:lang(li) .comment .comment .comment .comment,
+.comments-page:lang(li) .comment .comment .comment .comment .comment,
+.comments-page:lang(li) .comment .comment .comment .comment .comment .comment,
+.comments-page:lang(li) .comment .comment .comment .comment .comment .comment .comment,
+.comments-page:lang(li) .comment .comment .comment .comment .comment .comment .comment .comment,
+.comments-page:lang(li) .comment .comment .comment .comment .comment .comment .comment .comment .comment,
+.comments-page:lang(li) .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+    background: none !important;
+    }
+
+/* End light stylesheet *//* End light stylesheet */
+/* End light stylesheet *//* End light stylesheet */

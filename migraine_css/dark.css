@@ -1,0 +1,207 @@
+/* Dark stylesheet 2.0 */
+/* end dark stylesheet *//* end dark stylesheet */
+/* end dark stylesheet *//* end dark stylesheet */
+/* #3f3f3f */
+body:lang(dr) {background-color: #333; position: relative; }
+
+/*page header and username area*/
+ /*Header color*/
+#header-bottom-left:lang(dr) { background-color: #3f3f3f;
+}
+/* User Bar */
+#header-bottom-right:lang(dr) { background-color: #333;
+}
+
+#userbarToggle:lang(dr) {
+ color: gray!important;
+ background-color: #333!important;
+ border-right: 1px solid #333!important;
+}
+
+div#header-bottom-right:lang(dr) a
+{
+text-decoration: none;
+color: #abad1d;
+}
+
+/* Rounded frame around new, top, saved, etc... buttons */
+/* saved colour codes */
+#header .tabmenu:lang(dr) {
+    margin-left: 20px;
+    background-color: #2E3B48;
+    padding: 5px 8px;
+    -moz-border-top-left-radius: 8px !important;
+    -webkit-border-top-left-radius: 8px !important;
+    border-top-left-radius: 8px !important;
+    -moz-border-top-right-radius: 8px !important;
+    -webkit-border-top-right-radius: 8px !important;
+    border-top-right-radius: 8px !important;
+    border: 1px solid #999;
+    border-bottom: 0;
+    }
+
+/*TEXT options for saved, new, top, etc menu */
+#header .tabmenu:lang(dr) a {
+    background: transparent;
+    border: 0;
+    font-weight: 500;
+    color: #cdd4d9
+    }
+/* selected color and hover color for text set above. */
+#header .tabmenu:lang(dr) .selected a, #header .tabmenu:lang(dr) a:hover {
+    color:#abad1d
+}
+
+/* START Submit new link button & other button START*/
+ .btn:lang(dr), button:lang(dr), .side:lang(dr) a[href*='/#btn'] {
+    background-color:#808080;
+    border:none;
+    color:#d3d3d3;
+    padding:4px;
+    margin:4px 4px 4px 0;
+    cursor:pointer;
+    font-size:12px;
+    font-family:arial,helvetica,sans-serif;
+    -moz-border-radius:1px;
+    -webkit-border-radius:1px;
+    -o-border-radius:1px;
+    -ms-border-radius:1px;
+    -khtml-border-radius:1px;
+    border-radius:1px;
+}
+/* Submit new link button & other button cont. - Sets color, border, size, etc. */
+.morelink:lang(dr) {
+    border:none;
+    border-left:5px solid #808080;
+    text-align: center;
+    background-color: #2e3b48;
+    background-image: none;
+    height:28px;
+}
+/* .nub thing removes weird shaped end piece */
+.morelink:lang(dr) .nub:lang(dr), .morelink:lang(dr) ~ .spacer:lang(dr) {
+    display: none;
+}
+/* This sets the font options for the submit new link buttons */
+.morelink:lang(dr) a {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light","Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    letter-spacing:0px;
+    padding-left: 8px;
+    color:#cdd4d9;
+}
+
+.sidecontentbox:lang(dr) .content {
+    padding: 5px;
+    border:none;
+    background-color:#F2F2F2;
+}
+.sidecontentbox:lang(dr) .title:lang(dr) h1 {
+    display:inline-block;
+    width:284px;
+    border-left:6px solid #808080;
+    text-align: left;
+    background-color: #333;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light","Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-size:15px;
+    letter-spacing:0px;
+    padding:2px;
+    padding-left: 8px;
+    color:#F2F2F2;
+    text-transform:lowercase;
+    line-height:27px;
+}
+
+/*Search bar*/
+.side:lang(dr) .spacer:lang(dr) input[type=text]{
+  padding-top:3px!important;
+  padding-bottom:3px!important;
+  background:#333;
+  /*box-shadow:0px 0px 8px #37B!important;*/
+  border:1px solid gray!important;
+  color: #cdd4d9;
+}
+
+/**LINK COLOR FOR SUBMITTED POSTS*/
+.title.click:lang(dr), .title:visited:lang(dr) { color:#937773 !important; }
+.title:link:lang(dr) { color:#4977af !important; }
+/* Score colour under upvote arrow */
+/*.link:lang(dr) .score:lang(dr) {color: #111 !important;}*/
+
+/* Comment boxes */
+/*Text color of comments */
+.md:lang(dr) p {
+      color:#d3d3d3;
+}
+/* Colour settings for self post text box. */
+.thing:lang(dr) .usertext-body:lang(dr) .md:lang(dr) {
+background-color: #3f3f3f!important;
+border-color: #333;
+color:#d3d3d3;
+}
+
+/*username color*/
+.author:lang(dr) {color: #abad1d!important;}
+
+/* SIDEBAR! *//* SIDEBAR! *//* SIDEBAR! */
+/* SIDEBAR! *//* SIDEBAR! *//* SIDEBAR! */
+/* Subreddit name color */
+.redditname:lang(dr) a {
+font-size: 100%; 
+color: #cdd4d9;
+}
+
+/*moderator box?*/
+/*Moderator box colour and transparency */
+.sidecontentbox:lang(dr) .content { background: #3f3f3f;
+}
+.icon-menu:lang(dr) a { background:transparent;
+}
+
+/*Sidebar bar border and whatnot*/
+.side:lang(dr) {
+    background-color: #333;
+    color:#cdd4d9;
+    border-style: none;
+    border-width: 0px;
+    float: right;
+    margin: 5px 5px 0;
+    padding: 3px;
+    }
+
+/*text colors in sidebar*/
+.side:lang(dr) {color: #cdd4d9;}
+
+/* Post info box colours */
+.linkinfo:lang(dr), .titlebox:lang(dr) {
+  background-color: transparent;
+  border: 1px solid #000;
+  padding: 4px;
+}
+/*show my flair box bg colour */
+.titlebox form.flairtoggle {
+    background: transparent;
+    color: #cdd4d9;
+}
+
+
+/* HOLY MOTHER OF GOD WHAT THE FUCK DOES THIS DO?! */
+/* Oh... it's just some babely junk that makes comments look better for RES users. Those fuckers. Thanks RES, we <3 you! */
+/* AKA, overrides the commentBoxes option that ruins dark themes. */
+.comments-page:lang(dr) .comment,
+.comments-page:lang(dr) .comment .comment,
+.comments-page:lang(dr) .comment .comment .comment,
+.comments-page:lang(dr) .comment .comment .comment .comment,
+.comments-page:lang(dr) .comment .comment .comment .comment .comment,
+.comments-page:lang(dr) .comment .comment .comment .comment .comment .comment,
+.comments-page:lang(dr) .comment .comment .comment .comment .comment .comment .comment,
+.comments-page:lang(dr) .comment .comment .comment .comment .comment .comment .comment .comment,
+.comments-page:lang(dr) .comment .comment .comment .comment .comment .comment .comment .comment .comment,
+.comments-page:lang(dr) .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+    background: none !important;
+    }
+
+/* end dark stylesheet *//* end dark stylesheet */
+/* end dark stylesheet *//* end dark stylesheet */
+
