@@ -7,11 +7,11 @@
 
 /* Place this in the sidebar to get a theme selector.
 	The code below can insert images in the sidebar as well.
-##### [](http://reddit.com/r/chronicpain/ "Default Theme!")
+##### [](http://reddit.com/r/migraine/ "Default Theme!")
 
-##### [](http://li.reddit.com/r/chronicpain/ "Light Theme!")
+##### [](http://li.reddit.com/r/migraine/ "Light Theme!")
 
-##### [](http://dr.reddit.com/r/chronicpain/ "Dark Theme!")
+##### [](http://dr.reddit.com/r/migraine/ "Dark Theme!")
 */
 
 /* Universal stylesheet, or things which ignore the lang() setting */
@@ -26,7 +26,7 @@
 display: none;
 }  
 .subscribers .number::after {
-content: " people in pain";
+content: " migraineurs";
 }
 
 /* replace 'online readers' with something else*/
@@ -34,22 +34,22 @@ content: " people in pain";
 display: none;
 }  
 .users-online .number::after {
-content: " pain sufferers here now";
+content: " migraineurs here now";
 }
 
-.side a[href="http://reddit.com/r/chronicpain/"] {
+.side a[href="http://reddit.com/r/migraine/"] {
 display: inline-block;
 height: 25px;
 width: 180px;
 background-image: url(%%bacon-image%%); background-repeat: no-repeat; background-position: 0px -75px;
 }
-.side a[href="http://li.reddit.com/r/chronicpain/"] {
+.side a[href="http://li.reddit.com/r/migraine/"] {
 display: inline-block;
 height: 25px;
 width: 180px;
 background-image: url(%%bacon-image%%); background-repeat: no-repeat; background-position: 0px -150px;
 }
-.side a[href="http://dr.reddit.com/r/chronicpain/"] {
+.side a[href="http://dr.reddit.com/r/migraine/"] {
 display: inline-block;
 height: 25px;
 width: 180px;
@@ -214,7 +214,15 @@ color:#d3d3d3;
 }
 
 /*username color*/
-.author:lang(dr) {color: #abad1d!important;}
+.author:lang(dr) {color: #abad1d!important;
+}
+/* Link colour in comments correlating to submitted comments colour */
+.comment:lang(dr) .md:lang(dr) p > a {
+color: #4977af;
+}
+.comment:lang(dr) .md:lang(dr) p > a:visited {
+color: #937773;
+}
 
 /* SIDEBAR! *//* SIDEBAR! *//* SIDEBAR! */
 /* SIDEBAR! *//* SIDEBAR! *//* SIDEBAR! */
@@ -252,7 +260,7 @@ color: #cdd4d9;
   padding: 4px;
 }
 /*show my flair box bg colour */
-.titlebox form.flairtoggle {
+.titlebox:lang(dr) form.flairtoggle:lang(dr) {
     background: transparent;
     color: #cdd4d9;
 }
@@ -276,6 +284,7 @@ color: #cdd4d9;
 
 /* end dark stylesheet *//* end dark stylesheet */
 /* end dark stylesheet *//* end dark stylesheet */
+
 
 
 
@@ -422,7 +431,15 @@ color:#5a5555;
 }
 
 /*username color*/
-.author:lang(li) {color: #4c71b3!important;}
+.author:lang(li) {color: #4c71b3!important;
+}
+/* Link colour in comments correlating to submitted comments colour */
+.comment:lang(li) .md:lang(li) p > a {
+color: #3f5d84;
+}
+.comment:lang(li) .md:lang(li) p > a:visited {
+color: #937773;
+}
 
 /* SIDEBAR! *//* SIDEBAR! *//* SIDEBAR! */
 /* SIDEBAR! *//* SIDEBAR! *//* SIDEBAR! */
@@ -460,7 +477,7 @@ color: #5a5555;
   padding: 4px;
 }
 /*show my flair box bg colour */
-.titlebox form.flairtoggle {
+.titlebox:lang(li) form.flairtoggle:lang(li) {
     background: transparent;
     color: #5a5555;
 }
@@ -491,7 +508,186 @@ color: #5a5555;
 /* End light stylesheet *//* End light stylesheet */
 
 
+/* You mean this makes the wiki look nice? Whoadude... */
+/* Wiki page settings for readability and colour settings. */
 
+/*START universal and default them stylsheet */
+/* Selectively indents the wikipage text! For all stylesheets. */
+/*.wiki-page .wiki-page-content .md p,
+.wiki-page .wiki-page-content .md ul{
+    padding: 0 35px;
+    } */
+.wiki-page .md p,
+.wiki-page .md ul {
+   padding-left:12px;
+}
+
+.wiki-page .md h1,
+.wiki-page .md h2,
+.wiki-page .md h3,
+.wiki-page .md h4,
+.wiki-page .md h5,
+.wiki-page .md h6 {
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+/*Header settings, h1-h6 - Max is 6.*/
+body.wiki-page .wiki-page-content .md.wiki h1{
+    font-size:2.0em; 
+    padding-left: -10px;
+}
+body.wiki-page .wiki-page-content .md.wiki h2{
+    font-size:1.4em; 
+    padding-left: 0px;
+}
+body.wiki-page .wiki-page-content .md.wiki h3{
+    font-size:1.0em; 
+    padding-left: 8px;
+}
+/*Third headings in list*/
+body.wiki-page .wiki-page-content .md.wiki h4,
+body.wiki-page .wiki-page-content .md.wiki h5,
+body.wiki-page .wiki-page-content .md.wiki h6 {
+    font-size:0.9em; 
+    padding-left: 12px;
+}
+
+/* start Dark theme wiki */
+/*adjusts text padding*/
+
+.wiki-page:lang(dr) .md:lang(dr) h1,
+.wiki-page:lang(dr) .md:lang(dr) h2,
+.wiki-page:lang(dr) .md:lang(dr) h3,
+.wiki-page:lang(dr) .md:lang(dr) h4,
+.wiki-page:lang(dr) .md:lang(dr) h5,
+.wiki-page:lang(dr) .md:lang(dr) h6 {
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+/*Wiki page headings, bold text above content. */
+/*Primary page text colour */
+body.wiki-page:lang(dr) { color: #d3d3d3;}
+
+/*Table colors Headings, text, and lines */
+.md:lang(dr) table {
+color: #818181;
+}
+.md:lang(dr) table th {
+border-top: 1px solid #818181;
+border-left: 1px solid #818181;
+border-bottom: 1px solid #818181;
+border-right: 1px solid #818181;
+background-color: #2e3b48;
+color: #818181;
+padding: .2em;
+}
+
+.md:lang(dr) td {
+border-left: 1px solid #818181;
+border-bottom: 1px solid #818181;
+border-right: 1px solid #818181;
+color: #000;
+padding: .2em;
+color: #d3d3d3;
+}
+
+/*Header settings, h1-h6 - Max is 6.*/
+body.wiki-page:lang(dr) .wiki-page-content:lang(dr) .md.wiki:lang(dr) h1{
+    font-size:2.0em; 
+        color: #818181;
+    padding-left:-10px;
+}
+body.wiki-page:lang(dr) .wiki-page-content:lang(dr) .md.wiki:lang(dr) h2{
+    font-size:1.4em; 
+        color: #818181;
+    padding-left: 0px;
+}
+body.wiki-page:lang(dr) .wiki-page-content:lang(dr) .md.wiki:lang(dr) h3{
+    font-size:1.0em; 
+        color: #818181;
+    padding-left:8px;
+}
+body.wiki-page:lang(dr) .wiki-page-content:lang(dr) .md.wiki:lang(dr) h4,
+body.wiki-page:lang(dr) .wiki-page-content:lang(dr) .md.wiki:lang(dr) h5,
+body.wiki-page:lang(dr) .wiki-page-content:lang(dr) .md.wiki:lang(dr) h6 {
+    font-size:0.9em; 
+        color: #818181;
+    padding-left: 12px;
+}
+
+/* END dark theme wiki */
+
+/* start light theme wiki */
+/*adjusts text padding*/
+/*.wiki-page:lang(li) .md:lang(li) p,
+.wiki-page:lang(li) .md:lang(li) ul {
+   font-family: Georgia, "Times New Roman", serif;
+   padding-left:35px;
+   /*max-width:500px;*/
+   /*line-height:140%;
+}*/
+
+.wiki-page:lang(li) .md:lang(li) h1,
+.wiki-page:lang(li) .md:lang(li) h2,
+.wiki-page:lang(li) .md:lang(li) h3,
+.wiki-page:lang(li) .md:lang(li) h4,
+.wiki-page:lang(li) .md:lang(li) h5,
+.wiki-page:lang(li) .md:lang(li) h6 {
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+/*Wiki page headings, bold text above content. */
+/*Primary page text colour */
+body.wiki-page:lang(li) { color: #5a5555;}
+
+/*Table colors Headings, text, and lines */
+.md:lang(li) table {
+color: #5a5555;
+}
+.md:lang(li) table th {
+border-top: 1px solid #525252;
+border-left: 1px solid #525252;
+border-bottom: 1px solid #525252;
+border-right: 1px solid #525252;
+background-color: #f2c782;
+color: #000;
+padding: .2em;
+}
+.md:lang(li) td {
+border-left: 1px solid #525252;
+border-bottom: 1px solid #525252;
+border-right: 1px solid #525252;
+color: #000;
+padding: .2em;
+color: #5a5555;
+}
+
+/*Header settings, h1-h6 - Max is 6.*/
+body.wiki-page:lang(li) .wiki-page-content:lang(li) .md.wiki:lang(li) h1{
+    font-size:2.0em; 
+        color: #525252;
+    padding-left:-10px;
+}
+body.wiki-page:lang(li) .wiki-page-content:lang(li) .md.wiki:lang(li) h2{
+    font-size:1.4em; 
+        color: #525252;
+    padding-left: 0px;
+}
+body.wiki-page:lang(li) .wiki-page-content:lang(li) .md.wiki:lang(li) h3{
+    font-size:1.0em; 
+        color: #525252;
+    padding-left: 8px;
+}
+/*Third headings in list*/
+body.wiki-page:lang(li) .wiki-page-content:lang(li) .md.wiki:lang(li) h4,
+body.wiki-page:lang(li) .wiki-page-content:lang(li) .md.wiki:lang(li) h5,
+body.wiki-page:lang(li) .wiki-page-content:lang(li) .md.wiki:lang(li) h6 {
+    font-size:0.9em; 
+        color: #525252;
+    padding-left: 12px;
+}
+
+/* END light theme wiki */
 
 
 /*Flair, bitches!*/

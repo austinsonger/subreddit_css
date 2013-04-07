@@ -26,7 +26,7 @@
 display: none;
 }  
 .subscribers .number::after {
-content: " migraineurs";
+content: " people in pain";
 }
 
 /* replace 'online readers' with something else*/
@@ -34,22 +34,22 @@ content: " migraineurs";
 display: none;
 }  
 .users-online .number::after {
-content: " migraineurs here now";
+content: " pain sufferers here now";
 }
 
-.side a[href="http://reddit.com/r/migraine/"] {
+.side a[href="http://reddit.com/r/chronicpain/"] {
 display: inline-block;
 height: 25px;
 width: 180px;
 background-image: url(%%bacon-image%%); background-repeat: no-repeat; background-position: 0px -75px;
 }
-.side a[href="http://li.reddit.com/r/migraine/"] {
+.side a[href="http://li.reddit.com/r/chronicpain/"] {
 display: inline-block;
 height: 25px;
 width: 180px;
 background-image: url(%%bacon-image%%); background-repeat: no-repeat; background-position: 0px -150px;
 }
-.side a[href="http://dr.reddit.com/r/migraine/"] {
+.side a[href="http://dr.reddit.com/r/chronicpain/"] {
 display: inline-block;
 height: 25px;
 width: 180px;
@@ -214,7 +214,15 @@ color:#d3d3d3;
 }
 
 /*username color*/
-.author:lang(dr) {color: #abad1d!important;}
+.author:lang(dr) {color: #abad1d!important;
+}
+/* Link colour in comments correlating to submitted comments colour */
+.comment:lang(dr) .md:lang(dr) p > a {
+color: #4977af;
+}
+.comment:lang(dr) .md:lang(dr) p > a:visited {
+color: #937773;
+}
 
 /* SIDEBAR! *//* SIDEBAR! *//* SIDEBAR! */
 /* SIDEBAR! *//* SIDEBAR! *//* SIDEBAR! */
@@ -423,7 +431,15 @@ color:#5a5555;
 }
 
 /*username color*/
-.author:lang(li) {color: #4c71b3!important;}
+.author:lang(li) {color: #4c71b3!important;
+}
+/* Link colour in comments correlating to submitted comments colour */
+.comment:lang(li) .md:lang(li) p > a {
+color: #3f5d84;
+}
+.comment:lang(li) .md:lang(li) p > a:visited {
+color: #937773;
+}
 
 /* SIDEBAR! *//* SIDEBAR! *//* SIDEBAR! */
 /* SIDEBAR! *//* SIDEBAR! *//* SIDEBAR! */
@@ -495,14 +511,49 @@ color: #5a5555;
 /* You mean this makes the wiki look nice? Whoadude... */
 /* Wiki page settings for readability and colour settings. */
 
-/* start Dark theme wiki */
-.wiki-page:lang(dr) .md:lang(dr) p,
-.wiki-page:lang(dr) .md:lang(dr) ul {
-   font-family: Georgia, "Times New Roman", serif;
-   padding-left:20px;
-   max-width:500px;
-   line-height:150%;
+/*START universal and default them stylsheet */
+/* Selectively indents the wikipage text! For all stylesheets. */
+/*.wiki-page .wiki-page-content .md p,
+.wiki-page .wiki-page-content .md ul{
+    padding: 0 35px;
+    } */
+.wiki-page .md p,
+.wiki-page .md ul {
+   padding-left:12px;
 }
+
+.wiki-page .md h1,
+.wiki-page .md h2,
+.wiki-page .md h3,
+.wiki-page .md h4,
+.wiki-page .md h5,
+.wiki-page .md h6 {
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+/*Header settings, h1-h6 - Max is 6.*/
+body.wiki-page .wiki-page-content .md.wiki h1{
+    font-size:2.0em; 
+    padding-left: -10px;
+}
+body.wiki-page .wiki-page-content .md.wiki h2{
+    font-size:1.4em; 
+    padding-left: 0px;
+}
+body.wiki-page .wiki-page-content .md.wiki h3{
+    font-size:1.0em; 
+    padding-left: 8px;
+}
+/*Third headings in list*/
+body.wiki-page .wiki-page-content .md.wiki h4,
+body.wiki-page .wiki-page-content .md.wiki h5,
+body.wiki-page .wiki-page-content .md.wiki h6 {
+    font-size:0.9em; 
+    padding-left: 12px;
+}
+
+/* start Dark theme wiki */
+/*adjusts text padding*/
 
 .wiki-page:lang(dr) .md:lang(dr) h1,
 .wiki-page:lang(dr) .md:lang(dr) h2,
@@ -513,11 +564,7 @@ color: #5a5555;
     font-family: Verdana, Tahoma, sans-serif;
 }
 
-/*Wiki page headings, bold text above conent. */
-body.wiki-page:lang(dr) .wiki-page-content:lang(dr) .md.wiki:lang(dr) h2{
-    font-size:1.3em; 
-        color: #818181;
-}
+/*Wiki page headings, bold text above content. */
 /*Primary page text colour */
 body.wiki-page:lang(dr) { color: #d3d3d3;}
 
@@ -544,40 +591,41 @@ padding: .2em;
 color: #d3d3d3;
 }
 
-/*unidentified still*/
+/*Header settings, h1-h6 - Max is 6.*/
 body.wiki-page:lang(dr) .wiki-page-content:lang(dr) .md.wiki:lang(dr) h1{
-    font-size:1.5em; 
-        color: green;
+    font-size:2.0em; 
+        color: #818181;
+    padding-left:-10px;
 }
-/*unidentified*/
+body.wiki-page:lang(dr) .wiki-page-content:lang(dr) .md.wiki:lang(dr) h2{
+    font-size:1.4em; 
+        color: #818181;
+    padding-left: 0px;
+}
 body.wiki-page:lang(dr) .wiki-page-content:lang(dr) .md.wiki:lang(dr) h3{
-    font-size:1.1em; 
-        color: red;
-    padding-left:15px;
+    font-size:1.0em; 
+        color: #818181;
+    padding-left:8px;
 }
-/*unidentified*/
-body.wiki-page:lang(dr) .wiki-page-content:lang(dr) .md.wiki:lang(dr) h4{
+body.wiki-page:lang(dr) .wiki-page-content:lang(dr) .md.wiki:lang(dr) h4,
+body.wiki-page:lang(dr) .wiki-page-content:lang(dr) .md.wiki:lang(dr) h5,
+body.wiki-page:lang(dr) .wiki-page-content:lang(dr) .md.wiki:lang(dr) h6 {
     font-size:0.9em; 
-        color: yellow;
-    padding-left:20px;
+        color: #818181;
+    padding-left: 12px;
 }
-.wiki-page:lang(dr) .md:lang(dr) h6{ 
-     background: pink;
-     border: #336699 solid 1px;
-     padding: 10px;
-     color: red;
-     text-align: center; 
-}
+
 /* END dark theme wiki */
 
-/* START light theme wiki */
-.wiki-page:lang(li) .md:lang(li) p,
+/* start light theme wiki */
+/*adjusts text padding*/
+/*.wiki-page:lang(li) .md:lang(li) p,
 .wiki-page:lang(li) .md:lang(li) ul {
    font-family: Georgia, "Times New Roman", serif;
-   padding-left:20px;
-   max-width:500px;
-   line-height:150%;
-}
+   padding-left:35px;
+   /*max-width:500px;*/
+   /*line-height:140%;
+}*/
 
 .wiki-page:lang(li) .md:lang(li) h1,
 .wiki-page:lang(li) .md:lang(li) h2,
@@ -588,11 +636,7 @@ body.wiki-page:lang(dr) .wiki-page-content:lang(dr) .md.wiki:lang(dr) h4{
     font-family: Verdana, Tahoma, sans-serif;
 }
 
-/*Wiki page headings, bold text above conent. */
-body.wiki-page:lang(li) .wiki-page-content:lang(li) .md.wiki:lang(li) h2{
-    font-size:1.3em; 
-        color: #5a5555;
-}
+/*Wiki page headings, bold text above content. */
 /*Primary page text colour */
 body.wiki-page:lang(li) { color: #5a5555;}
 
@@ -609,7 +653,6 @@ background-color: #f2c782;
 color: #000;
 padding: .2em;
 }
-
 .md:lang(li) td {
 border-left: 1px solid #525252;
 border-bottom: 1px solid #525252;
@@ -619,30 +662,31 @@ padding: .2em;
 color: #5a5555;
 }
 
-/*unidentified still*/
+/*Header settings, h1-h6 - Max is 6.*/
 body.wiki-page:lang(li) .wiki-page-content:lang(li) .md.wiki:lang(li) h1{
-    font-size:1.5em; 
-        color: green;
+    font-size:2.0em; 
+        color: #525252;
+    padding-left:-10px;
 }
-/*unidentified*/
+body.wiki-page:lang(li) .wiki-page-content:lang(li) .md.wiki:lang(li) h2{
+    font-size:1.4em; 
+        color: #525252;
+    padding-left: 0px;
+}
 body.wiki-page:lang(li) .wiki-page-content:lang(li) .md.wiki:lang(li) h3{
-    font-size:1.1em; 
-        color: red;
-    padding-left:15px;
+    font-size:1.0em; 
+        color: #525252;
+    padding-left: 8px;
 }
-/*unidentified*/
-body.wiki-page:lang(li) .wiki-page-content:lang(li) .md.wiki:lang(li) h4{
+/*Third headings in list*/
+body.wiki-page:lang(li) .wiki-page-content:lang(li) .md.wiki:lang(li) h4,
+body.wiki-page:lang(li) .wiki-page-content:lang(li) .md.wiki:lang(li) h5,
+body.wiki-page:lang(li) .wiki-page-content:lang(li) .md.wiki:lang(li) h6 {
     font-size:0.9em; 
-        color: yellow;
-    padding-left:20px;
+        color: #525252;
+    padding-left: 12px;
 }
-.wiki-page:lang(li) .md:lang(li) h6{ 
-     background: pink;
-     border: #336699 solid 1px;
-     padding: 10px;
-     color: red;
-     text-align: center; 
-}
+
 /* END light theme wiki */
 
 

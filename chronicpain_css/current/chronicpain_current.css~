@@ -1,0 +1,762 @@
+/* CSS by ramma314, adapted from CSS by iamducky with much help from /r/csshelp! */
+
+/**** CSS Information - Yes, you can steal this code, as long as credit is given. ****/
+/*Most elements should be commented to specify their function*/
+/*Themes can be easily modified by identifying colours codes to adjust, then using find and replace on the section for that theme. */
+/*A new theme can be created simply by copying a full lang() section and setting colour codes, find and replace works best. */
+
+/* Place this in the sidebar to get a theme selector.
+	The code below can insert images in the sidebar as well.
+##### [](http://reddit.com/r/chronicpain/ "Default Theme!")
+
+##### [](http://li.reddit.com/r/chronicpain/ "Light Theme!")
+
+##### [](http://dr.reddit.com/r/chronicpain/ "Dark Theme!")
+*/
+
+/* Universal stylesheet, or things which ignore the lang() setting */
+
+/* Theme selector flair */
+.bacon-dark_theme{ background-position: 0 0; width: 180px; height: 25px; } 
+.bacon-default_theme{ background-position: 0 -75px; width: 180px; height: 25px; } 
+.bacon-light_theme{ background-position: 0 -150px; width: 180px; height: 25px; }
+
+/* replace 'readers' with something else*/
+.subscribers .word {
+display: none;
+}  
+.subscribers .number::after {
+content: " people in pain";
+}
+
+/* replace 'online readers' with something else*/
+.users-online .word {
+display: none;
+}  
+.users-online .number::after {
+content: " pain sufferers here now";
+}
+
+.side a[href="http://reddit.com/r/chronicpain/"] {
+display: inline-block;
+height: 25px;
+width: 180px;
+background-image: url(%%bacon-image%%); background-repeat: no-repeat; background-position: 0px -75px;
+}
+.side a[href="http://li.reddit.com/r/chronicpain/"] {
+display: inline-block;
+height: 25px;
+width: 180px;
+background-image: url(%%bacon-image%%); background-repeat: no-repeat; background-position: 0px -150px;
+}
+.side a[href="http://dr.reddit.com/r/chronicpain/"] {
+display: inline-block;
+height: 25px;
+width: 180px;
+background-image: url(%%bacon-image%%); background-repeat: no-repeat; background-position: 0px 0px;
+}
+
+/* Fix the subreddit name so images don't appear! */
+.side .titlebox .redditname a {
+    background: none;
+    display: block;
+}
+
+/* Replaces dotted line with solid thin line */
+.comment .child {
+    border-left: 1px inset #DDDDFF;
+}
+
+
+
+
+/* Dark stylesheet 2.0 */
+/* end dark stylesheet *//* end dark stylesheet */
+/* end dark stylesheet *//* end dark stylesheet */
+/* #3f3f3f */
+body:lang(dr) {background-color: #333; position: relative; }
+
+/*page header and username area*/
+ /*Header color*/
+#header-bottom-left:lang(dr) { background-color: #545454;
+}
+/* User Bar */
+#header-bottom-right:lang(dr) { background-color: #333;
+}
+
+#userbarToggle:lang(dr) {
+ color: gray!important;
+ background-color: #333!important;
+ border-right: 1px solid #333!important;
+}
+
+div#header-bottom-right:lang(dr) a
+{
+text-decoration: none;
+color: #abad1d;
+}
+
+/* Rounded frame around new, top, saved, etc... buttons */
+/* saved colour codes */
+#header .tabmenu:lang(dr) {
+    margin-left: 20px;
+    background-color: #2E3B48;
+    padding: 5px 8px;
+    -moz-border-top-left-radius: 8px !important;
+    -webkit-border-top-left-radius: 8px !important;
+    border-top-left-radius: 8px !important;
+    -moz-border-top-right-radius: 8px !important;
+    -webkit-border-top-right-radius: 8px !important;
+    border-top-right-radius: 8px !important;
+    border: 1px solid #999;
+    border-bottom: 0;
+    }
+
+/*TEXT options for saved, new, top, etc menu */
+#header .tabmenu:lang(dr) a {
+    background: transparent;
+    border: 0;
+    font-weight: 500;
+    color: #cdd4d9
+    }
+/* selected color and hover color for text set above. */
+#header .tabmenu:lang(dr) .selected a, #header .tabmenu:lang(dr) a:hover {
+    color:#abad1d
+}
+
+/* START Submit new link button & other button START*/
+ .btn:lang(dr), button:lang(dr), .side:lang(dr) a[href*='/#btn'] {
+    background-color:#808080;
+    border:none;
+    color:#d3d3d3;
+    padding:4px;
+    margin:4px 4px 4px 0;
+    cursor:pointer;
+    font-size:12px;
+    font-family:arial,helvetica,sans-serif;
+    -moz-border-radius:1px;
+    -webkit-border-radius:1px;
+    -o-border-radius:1px;
+    -ms-border-radius:1px;
+    -khtml-border-radius:1px;
+    border-radius:1px;
+}
+/* Submit new link button & other button cont. - Sets color, border, size, etc. */
+.morelink:lang(dr) {
+    border:none;
+    border-left:5px solid #808080;
+    text-align: center;
+    background-color: #2e3b48;
+    background-image: none;
+    height:28px;
+}
+/* .nub thing removes weird shaped end piece */
+.morelink:lang(dr) .nub:lang(dr), .morelink:lang(dr) ~ .spacer:lang(dr) {
+    display: none;
+}
+/* This sets the font options for the submit new link buttons */
+.morelink:lang(dr) a {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light","Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    letter-spacing:0px;
+    padding-left: 8px;
+    color:#cdd4d9;
+}
+
+.sidecontentbox:lang(dr) .content {
+    padding: 5px;
+    border:none;
+    background-color:#F2F2F2;
+}
+.sidecontentbox:lang(dr) .title:lang(dr) h1 {
+    display:inline-block;
+    width:284px;
+    border-left:6px solid #808080;
+    text-align: left;
+    background-color: #333;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light","Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-size:15px;
+    letter-spacing:0px;
+    padding:2px;
+    padding-left: 8px;
+    color:#F2F2F2;
+    text-transform:lowercase;
+    line-height:27px;
+}
+
+/*Search bar*/
+.side:lang(dr) .spacer:lang(dr) input[type=text]{
+  padding-top:3px!important;
+  padding-bottom:3px!important;
+  background:#333;
+  /*box-shadow:0px 0px 8px #37B!important;*/
+  border:1px solid gray!important;
+  color: #cdd4d9;
+}
+
+/**LINK COLOR FOR SUBMITTED POSTS*/
+.title.click:lang(dr), .title:visited:lang(dr) { color:#937773 !important; }
+.title:link:lang(dr) { color:#4977af !important; }
+/* Score colour under upvote arrow */
+/*.link:lang(dr) .score:lang(dr) {color: #111 !important;}*/
+
+/* Comment boxes */
+/*Text color of comments */
+.md:lang(dr) p {
+      color:#d3d3d3;
+}
+/* Colour settings for self post text box. */
+.thing:lang(dr) .usertext-body:lang(dr) .md:lang(dr) {
+background-color: #3f3f3f!important;
+border-color: #333;
+color:#d3d3d3;
+}
+
+/*username color*/
+.author:lang(dr) {color: #abad1d!important;
+}
+/* Link colour in comments correlating to submitted comments colour */
+.comment:lang(dr) .md:lang(dr) p > a {
+color: #4977af;
+}
+.comment:lang(dr) .md:lang(dr) p > a:visited {
+color: #937773;
+}
+
+/* SIDEBAR! *//* SIDEBAR! *//* SIDEBAR! */
+/* SIDEBAR! *//* SIDEBAR! *//* SIDEBAR! */
+/* Subreddit name color */
+.redditname:lang(dr) a {
+font-size: 100%; 
+color: #cdd4d9;
+}
+
+/*moderator box?*/
+/*Moderator box colour and transparency */
+.sidecontentbox:lang(dr) .content { background: #3f3f3f;
+}
+.icon-menu:lang(dr) a { background:transparent;
+}
+
+/*Sidebar bar border and whatnot*/
+.side:lang(dr) {
+    background-color: #333;
+    color:#cdd4d9;
+    border-style: none;
+    border-width: 0px;
+    float: right;
+    margin: 5px 5px 0;
+    padding: 3px;
+    }
+
+/*text colors in sidebar*/
+.side:lang(dr) {color: #cdd4d9;}
+
+/* Post info box colours */
+.linkinfo:lang(dr), .titlebox:lang(dr) {
+  background-color: transparent;
+  border: 1px solid #000;
+  padding: 4px;
+}
+/*show my flair box bg colour */
+.titlebox:lang(dr) form.flairtoggle:lang(dr) {
+    background: transparent;
+    color: #cdd4d9;
+}
+
+
+/* HOLY MOTHER OF GOD WHAT THE FUCK DOES THIS DO?! */
+/* Oh... it's just some babely junk that makes comments look better for RES users. Those fuckers. Thanks RES, we <3 you! */
+/* AKA, overrides the commentBoxes option that ruins dark themes. */
+.comments-page:lang(dr) .comment,
+.comments-page:lang(dr) .comment .comment,
+.comments-page:lang(dr) .comment .comment .comment,
+.comments-page:lang(dr) .comment .comment .comment .comment,
+.comments-page:lang(dr) .comment .comment .comment .comment .comment,
+.comments-page:lang(dr) .comment .comment .comment .comment .comment .comment,
+.comments-page:lang(dr) .comment .comment .comment .comment .comment .comment .comment,
+.comments-page:lang(dr) .comment .comment .comment .comment .comment .comment .comment .comment,
+.comments-page:lang(dr) .comment .comment .comment .comment .comment .comment .comment .comment .comment,
+.comments-page:lang(dr) .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+    background: none !important;
+    }
+
+/* end dark stylesheet *//* end dark stylesheet */
+/* end dark stylesheet *//* end dark stylesheet */
+
+
+
+
+
+/* Light style sheet v.2.0 */
+/* start light stylesheet *//* start light stylesheet */
+/* start light stylesheet *//* start light stylesheet #fcf1ea*/
+body:lang(li) {background-color: #fcf1ea; position: relative; }
+
+/*page header and username area*/
+ /*Header color*/
+#header-bottom-left:lang(li) { background-color: #f2e3da;
+}
+/* User Bar */
+#header-bottom-right:lang(li) { background-color: #fcf1ea;
+}
+
+#userbarToggle:lang(li) {
+ color: gray!important;
+ background-color: #fcf1ea!important;
+ border-right: 1px solid #fcf1ea!important;
+}
+
+/* Text color user-name top right */
+div#header-bottom-right:lang(li) a
+{
+text-decoration: none;
+color: #4c71b3;
+}
+
+/* Rounded frame around new, top, saved, etc... buttons */
+/* saved colour codes */
+#header .tabmenu:lang(li) {
+    margin-left: 20px;
+    background-color: #f2c782;
+    padding: 5px 8px;
+    -moz-border-top-left-radius: 8px !important;
+    -webkit-border-top-left-radius: 8px !important;
+    border-top-left-radius: 8px !important;
+    -moz-border-top-right-radius: 8px !important;
+    -webkit-border-top-right-radius: 8px !important;
+    border-top-right-radius: 8px !important;
+    border: 1px solid #999;
+    border-bottom: 0;
+    }
+
+/*TEXT options for saved, new, top, etc menu */
+#header .tabmenu:lang(li) a {
+    background: transparent;
+    border: 0;
+    font-weight: 500;
+    color: #5a5555
+    }
+/* selected color and hover color for text set above. */
+#header .tabmenu:lang(li) .selected a, #header .tabmenu:lang(li) a:hover {
+    color:#4c71b3
+}
+
+/* START Submit new link button & other button START*/
+ .btn:lang(li), button:lang(li), .side:lang(li) a[href*='/#btn'] {
+    background-color:#f2c782;
+    border:none;
+    color:#5a5555;
+    padding:4px;
+    margin:4px 4px 4px 0;
+    cursor:pointer;
+    font-size:12px;
+    font-family:arial,helvetica,sans-serif;
+    -moz-border-radius:1px;
+    -webkit-border-radius:1px;
+    -o-border-radius:1px;
+    -ms-border-radius:1px;
+    -khtml-border-radius:1px;
+    border-radius:1px;
+}
+/* Submit new link button & other button cont. - Sets color, border, size, etc. */
+.morelink:lang(li) {
+    border:none;
+    border-left:5px solid #ff9f30;
+    text-align: center;
+    background-color: #f2c782;
+    background-image: none;
+    height:28px;
+}
+/* .nub thing removes weird shaped end piece */
+.morelink:lang(li) .nub:lang(li), .morelink:lang(li) ~ .spacer:lang(li) {
+    display: none;
+}
+/* This sets the font options for the submit new link buttons */
+.morelink:lang(li) a {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light","Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    letter-spacing:0px;
+    padding-left: 8px;
+    color:#5a5555;
+}
+
+.sidecontentbox:lang(li) .content {
+    padding: 5px;
+    border:none;
+    background-color:#efefef;
+}
+.sidecontentbox:lang(li) .title:lang(li) h1 {
+    display:inline-block;
+    width:284px;
+    border-left:6px solid #ff9f30;
+    text-align: left;
+    background-color: #fcf1ea;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light","Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-size:15px;
+    letter-spacing:0px;
+    padding:2px;
+    padding-left: 8px;
+    color:#5a5555;
+    text-transform:lowercase;
+    line-height:27px;
+}
+
+/*Search bar*/
+.side:lang(li) .spacer:lang(li) input[type=text]{
+  padding-top:3px!important;
+  padding-bottom:3px!important;
+  background:#fcf1ea;
+  /*box-shadow:0px 0px 8px #37B!important;*/
+  border:1px solid gray!important;
+  color: #5a5555;
+}
+
+/**LINK COLOR FOR SUBMITTED POSTS*/
+.title.click:lang(li), .title:visited:lang(li) { color:#937773 !important; }
+.title:link:lang(li) { color:#3f5d84 !important; }
+
+/* Comment boxes */
+/*Text color of comments */
+.md:lang(li) p {
+      color:#5a5555;
+}
+/* Colour settings for self post text box. */
+.thing:lang(li) .usertext-body:lang(li) .md:lang(li) {
+background-color: #f2e3da!important;
+border-color: #fcf1ea;
+color:#5a5555;
+}
+
+/*username color*/
+.author:lang(li) {color: #4c71b3!important;
+}
+/* Link colour in comments correlating to submitted comments colour */
+.comment:lang(li) .md:lang(li) p > a {
+color: #3f5d84;
+}
+.comment:lang(li) .md:lang(li) p > a:visited {
+color: #937773;
+}
+
+/* SIDEBAR! *//* SIDEBAR! *//* SIDEBAR! */
+/* SIDEBAR! *//* SIDEBAR! *//* SIDEBAR! */
+/* Subreddit name color */
+.redditname:lang(li) a {
+font-size: 100%; 
+color: #5a5555;
+}
+
+/*moderator box?*/
+/*Moderator box colour and transparency */
+.sidecontentbox:lang(li) .content { background: #f2e3da;
+}
+.icon-menu:lang(li) a { background:transparent;
+}
+
+/*Sidebar bar border and whatnot*/
+.side:lang(li) {
+    background-color: #fcf1ea;
+    color:#5a5555;
+    border-style: none;
+    border-width: 0px;
+    float: right;
+    margin: 5px 5px 0;
+    padding: 3px;
+    }
+
+/*text colors in sidebar*/
+.side:lang(li) {color: #5a5555;}
+
+/* Post info box colours */
+.linkinfo:lang(li), .titlebox:lang(li) {
+  background-color: transparent;
+  border: 1px solid #000;
+  padding: 4px;
+}
+/*show my flair box bg colour */
+.titlebox:lang(li) form.flairtoggle:lang(li) {
+    background: transparent;
+    color: #5a5555;
+}
+
+/*.titlebox:lang(lr) .leavecontributor-button:lang(li) .option:lang(li) {
+    background-color: transparent;
+}*/
+
+
+
+/* HOLY MOTHER OF GOD WHAT THE FUCK DOES THIS DO?! */
+/* Oh... it's just some babely junk that makes comments look better for RES users. Those fuckers. Thanks RES, we <3 you! */
+/* AKA, overrides the commentBoxes option that ruins dark themes. */
+.comments-page:lang(li) .comment,
+.comments-page:lang(li) .comment .comment,
+.comments-page:lang(li) .comment .comment .comment,
+.comments-page:lang(li) .comment .comment .comment .comment,
+.comments-page:lang(li) .comment .comment .comment .comment .comment,
+.comments-page:lang(li) .comment .comment .comment .comment .comment .comment,
+.comments-page:lang(li) .comment .comment .comment .comment .comment .comment .comment,
+.comments-page:lang(li) .comment .comment .comment .comment .comment .comment .comment .comment,
+.comments-page:lang(li) .comment .comment .comment .comment .comment .comment .comment .comment .comment,
+.comments-page:lang(li) .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+    background: none !important;
+    }
+
+/* End light stylesheet *//* End light stylesheet */
+/* End light stylesheet *//* End light stylesheet */
+
+
+/* You mean this makes the wiki look nice? Whoadude... */
+/* Wiki page settings for readability and colour settings. */
+
+/*START universal and default them stylsheet */
+/* Selectively indents the wikipage text! For all stylesheets. */
+/*.wiki-page .wiki-page-content .md p,
+.wiki-page .wiki-page-content .md ul{
+    padding: 0 35px;
+    } */
+.wiki-page .md p,
+.wiki-page .md ul {
+   padding-left:12px;
+}
+
+.wiki-page .md h1,
+.wiki-page .md h2,
+.wiki-page .md h3,
+.wiki-page .md h4,
+.wiki-page .md h5,
+.wiki-page .md h6 {
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+/*Header settings, h1-h6 - Max is 6.*/
+body.wiki-page .wiki-page-content .md.wiki h1{
+    font-size:2.0em; 
+    padding-left: -10px;
+}
+body.wiki-page .wiki-page-content .md.wiki h2{
+    font-size:1.4em; 
+    padding-left: 0px;
+}
+body.wiki-page .wiki-page-content .md.wiki h3{
+    font-size:1.0em; 
+    padding-left: 8px;
+}
+/*Third headings in list*/
+body.wiki-page .wiki-page-content .md.wiki h4,
+body.wiki-page .wiki-page-content .md.wiki h5,
+body.wiki-page .wiki-page-content .md.wiki h6 {
+    font-size:0.9em; 
+    padding-left: 12px;
+}
+
+/* start Dark theme wiki */
+/*adjusts text padding*/
+
+.wiki-page:lang(dr) .md:lang(dr) h1,
+.wiki-page:lang(dr) .md:lang(dr) h2,
+.wiki-page:lang(dr) .md:lang(dr) h3,
+.wiki-page:lang(dr) .md:lang(dr) h4,
+.wiki-page:lang(dr) .md:lang(dr) h5,
+.wiki-page:lang(dr) .md:lang(dr) h6 {
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+/*Wiki page headings, bold text above content. */
+/*Primary page text colour */
+body.wiki-page:lang(dr) { color: #d3d3d3;}
+
+/*Table colors Headings, text, and lines */
+.md:lang(dr) table {
+color: #818181;
+}
+.md:lang(dr) table th {
+border-top: 1px solid #818181;
+border-left: 1px solid #818181;
+border-bottom: 1px solid #818181;
+border-right: 1px solid #818181;
+background-color: #2e3b48;
+color: #818181;
+padding: .2em;
+}
+
+.md:lang(dr) td {
+border-left: 1px solid #818181;
+border-bottom: 1px solid #818181;
+border-right: 1px solid #818181;
+color: #000;
+padding: .2em;
+color: #d3d3d3;
+}
+
+/*Header settings, h1-h6 - Max is 6.*/
+body.wiki-page:lang(dr) .wiki-page-content:lang(dr) .md.wiki:lang(dr) h1{
+    font-size:2.0em; 
+        color: #818181;
+    padding-left:-10px;
+}
+body.wiki-page:lang(dr) .wiki-page-content:lang(dr) .md.wiki:lang(dr) h2{
+    font-size:1.4em; 
+        color: #818181;
+    padding-left: 0px;
+}
+body.wiki-page:lang(dr) .wiki-page-content:lang(dr) .md.wiki:lang(dr) h3{
+    font-size:1.0em; 
+        color: #818181;
+    padding-left:8px;
+}
+body.wiki-page:lang(dr) .wiki-page-content:lang(dr) .md.wiki:lang(dr) h4,
+body.wiki-page:lang(dr) .wiki-page-content:lang(dr) .md.wiki:lang(dr) h5,
+body.wiki-page:lang(dr) .wiki-page-content:lang(dr) .md.wiki:lang(dr) h6 {
+    font-size:0.9em; 
+        color: #818181;
+    padding-left: 12px;
+}
+
+/* END dark theme wiki */
+
+/* start light theme wiki */
+/*adjusts text padding*/
+/*.wiki-page:lang(li) .md:lang(li) p,
+.wiki-page:lang(li) .md:lang(li) ul {
+   font-family: Georgia, "Times New Roman", serif;
+   padding-left:35px;
+   /*max-width:500px;*/
+   /*line-height:140%;
+}*/
+
+.wiki-page:lang(li) .md:lang(li) h1,
+.wiki-page:lang(li) .md:lang(li) h2,
+.wiki-page:lang(li) .md:lang(li) h3,
+.wiki-page:lang(li) .md:lang(li) h4,
+.wiki-page:lang(li) .md:lang(li) h5,
+.wiki-page:lang(li) .md:lang(li) h6 {
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+/*Wiki page headings, bold text above content. */
+/*Primary page text colour */
+body.wiki-page:lang(li) { color: #5a5555;}
+
+/*Table colors Headings, text, and lines */
+.md:lang(li) table {
+color: #5a5555;
+}
+.md:lang(li) table th {
+border-top: 1px solid #525252;
+border-left: 1px solid #525252;
+border-bottom: 1px solid #525252;
+border-right: 1px solid #525252;
+background-color: #f2c782;
+color: #000;
+padding: .2em;
+}
+.md:lang(li) td {
+border-left: 1px solid #525252;
+border-bottom: 1px solid #525252;
+border-right: 1px solid #525252;
+color: #000;
+padding: .2em;
+color: #5a5555;
+}
+
+/*Header settings, h1-h6 - Max is 6.*/
+body.wiki-page:lang(li) .wiki-page-content:lang(li) .md.wiki:lang(li) h1{
+    font-size:2.0em; 
+        color: #525252;
+    padding-left:-10px;
+}
+body.wiki-page:lang(li) .wiki-page-content:lang(li) .md.wiki:lang(li) h2{
+    font-size:1.4em; 
+        color: #525252;
+    padding-left: 0px;
+}
+body.wiki-page:lang(li) .wiki-page-content:lang(li) .md.wiki:lang(li) h3{
+    font-size:1.0em; 
+        color: #525252;
+    padding-left: 8px;
+}
+/*Third headings in list*/
+body.wiki-page:lang(li) .wiki-page-content:lang(li) .md.wiki:lang(li) h4,
+body.wiki-page:lang(li) .wiki-page-content:lang(li) .md.wiki:lang(li) h5,
+body.wiki-page:lang(li) .wiki-page-content:lang(li) .md.wiki:lang(li) h6 {
+    font-size:0.9em; 
+        color: #525252;
+    padding-left: 12px;
+}
+
+/* END light theme wiki */
+
+
+/*Flair, bitches!*/
+.flair {
+border: none !important;
+padding:0px;
+background: url(%%spritesheet%%) no-repeat -9999px -9999px;
+display:inline-block;
+vertical-align: middle;
+}
+.flair { text-indent: 22px; }
+.flair-1{ background-position: 0 0; min-width: 20px; height: 20px; } 
+.flair-10{ background-position: 0 -70px; min-width: 20px; height: 20px; } 
+.flair-11{ background-position: 0 -140px; min-width: 20px; height: 20px; } 
+.flair-12{ background-position: 0 -210px; min-width: 20px; height: 20px; } 
+.flair-2{ background-position: 0 -280px; min-width: 20px; height: 20px; } 
+.flair-3{ background-position: 0 -350px; min-width: 20px; height: 20px; } 
+.flair-4{ background-position: 0 -420px; min-width: 20px; height: 20px; } 
+.flair-5{ background-position: 0 -490px; min-width: 20px; height: 20px; } 
+.flair-6{ background-position: 0 -560px; min-width: 20px; height: 20px; } 
+.flair-7{ background-position: 0 -630px; min-width: 20px; height: 20px; } 
+.flair-8{ background-position: 0 -700px; min-width: 20px; height: 20px; } 
+.flair-9{ background-position: 0 -770px; min-width: 20px; height: 20px; } 
+.flair-none{ background-position: 0 -840px; min-width: 20px; height: 20px; }
+
+/* Flair selection text */
+a.flairselectbtn:after{
+color:red;
+font-weight:bold;
+content:" Get your flair!";
+}
+
+/* Flair in comments awesomeness! */
+a[href="/zero"]:before, a[href="/0"]{
+    width: 20px; height: 20px; display: inline-block; background-repeat: no-repeat; background-image: url(%%spritesheet%%); background-position: 0px -840px; content: "";
+}
+a[href="/one"]:before, a[href="/1"]:before {
+    width: 20px; height: 20px; display: inline-block; background-repeat: no-repeat; background-image: url(%%spritesheet%%); background-position: 0px 0px; content: ""; 
+}
+a[href="/two"]:before, a[href="/2"]:before {
+    width: 20px; height: 20px; display: inline-block; background-repeat: no-repeat; background-image: url(%%spritesheet%%); background-position: 0px -280px; content: ""; 
+}
+a[href="/three"]:before, a[href="/3"]:before {
+    width: 20px; height: 20px; display: inline-block; background-repeat: no-repeat; background-image: url(%%spritesheet%%); background-position: 0px -350px; content: ""; 
+}
+a[href="/four"]:before, a[href="/4"]:before {
+    width: 20px; height: 20px; display: inline-block; background-repeat: no-repeat; background-image: url(%%spritesheet%%); background-position: 0px -420px; content: ""; 
+}
+a[href="/five"]:before, a[href="/5"]:before {
+    width: 20px; height: 20px; display: inline-block; background-repeat: no-repeat; background-image: url(%%spritesheet%%); background-position: 0px -490px; content: ""; 
+}
+a[href="/six"]:before, a[href="/6"]:before {
+    width: 20px; height: 20px; display: inline-block; background-repeat: no-repeat; background-image: url(%%spritesheet%%); background-position: 0px -560px; content: ""; 
+}
+a[href="/seven"]:before, a[href="/7"]:before {
+    width: 20px; height: 20px; display: inline-block; background-repeat: no-repeat; background-image: url(%%spritesheet%%); background-position: 0px -630px; content: ""; 
+}
+a[href="/eight"]:before, a[href="/8"]:before {
+    width: 20px; height: 20px; display: inline-block; background-repeat: no-repeat; background-image: url(%%spritesheet%%); background-position: 0px -700px; content: ""; 
+}
+a[href="/nine"]:before, a[href="/9"]:before {
+    width: 20px; height: 20px; display: inline-block; background-repeat: no-repeat; background-image: url(%%spritesheet%%); background-position: 0px -770px; content: ""; 
+}
+a[href="/ten"]:before, a[href="/10"]:before {
+    width: 20px; height: 20px; display: inline-block; background-repeat: no-repeat; background-image: url(%%spritesheet%%); background-position: 0px -70px; content: ""; 
+}
+a[href="/eleven"]:before, a[href="/11"]:before {
+    width: 20px; height: 20px; display: inline-block; background-repeat: no-repeat; background-image: url(%%spritesheet%%); background-position: 0px -140px; content: ""; 
+}
+a[href="/twelve"]:before, a[href="/12"]:before {
+    width: 20px; height: 20px; display: inline-block; background-repeat: no-repeat; background-image: url(%%spritesheet%%); background-position: 0px -210px; content: ""; 
+}

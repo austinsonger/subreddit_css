@@ -140,7 +140,15 @@ color:#5a5555;
 }
 
 /*username color*/
-.author:lang(li) {color: #4c71b3!important;}
+.author:lang(li) {color: #4c71b3!important;
+}
+/* Link colour in comments correlating to submitted comments colour */
+.comment:lang(li) .md:lang(li) p > a {
+color: #3f5d84;
+}
+.comment:lang(li) .md:lang(li) p > a:visited {
+color: #937773;
+}
 
 /* SIDEBAR! *//* SIDEBAR! *//* SIDEBAR! */
 /* SIDEBAR! *//* SIDEBAR! *//* SIDEBAR! */
