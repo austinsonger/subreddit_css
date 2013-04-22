@@ -1,0 +1,73 @@
+/* start Dark theme wiki */
+/*adjusts text padding*/
+/*.wiki-page:lang(dr) .md:lang(dr) p,*/
+/*.wiki-page:lang(dr) .md:lang(dr) ul {*/
+   /*font-family: Georgia, "Times New Roman", serif;*/
+   /*padding-left:35px;*/
+   /*max-width:500px;*/
+   /*line-height:140%;*/
+/*}*/
+
+.wiki-page:lang(dr) .md:lang(dr) h1,
+.wiki-page:lang(dr) .md:lang(dr) h2,
+.wiki-page:lang(dr) .md:lang(dr) h3,
+.wiki-page:lang(dr) .md:lang(dr) h4,
+.wiki-page:lang(dr) .md:lang(dr) h5,
+.wiki-page:lang(dr) .md:lang(dr) h6 {
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+/*Wiki page headings, bold text above content. */
+/*Primary page text colour */
+body.wiki-page:lang(dr) { color: #d3d3d3;}
+
+/*Table colors Headings, text, and lines */
+.md:lang(dr) table {
+color: #818181;
+}
+.md:lang(dr) table th {
+border-top: 1px solid #818181;
+border-left: 1px solid #818181;
+border-bottom: 1px solid #818181;
+border-right: 1px solid #818181;
+background-color: #2e3b48;
+color: #818181;
+padding: .2em;
+}
+
+.md:lang(dr) td {
+border-left: 1px solid #818181;
+border-bottom: 1px solid #818181;
+border-right: 1px solid #818181;
+color: #000;
+padding: .2em;
+color: #d3d3d3;
+}
+
+/*Header settings, h1-h6 - Max is 6.*/
+body.wiki-page:lang(dr) .wiki-page-content:lang(dr) .md.wiki:lang(dr) h1{
+    font-size:1.6em; 
+        color: #818181;
+    padding-left:-25px;
+}
+body.wiki-page:lang(dr) .wiki-page-content:lang(dr) .md.wiki:lang(dr) h2{
+    font-size:1.3em; 
+        color: #818181;
+    padding-left: 15px;
+}
+/*unidentified*/
+body.wiki-page:lang(dr) .wiki-page-content:lang(dr) .md.wiki:lang(dr) h3{
+    font-size:1.0em; 
+        color: #818181;
+    padding-left:23px;
+}
+/*Third headings in list*/
+body.wiki-page:lang(dr) .wiki-page-content:lang(dr) .md.wiki:lang(dr) h4,
+body.wiki-page:lang(dr) .wiki-page-content:lang(dr) .md.wiki:lang(dr) h5,
+body.wiki-page:lang(dr) .wiki-page-content:lang(dr) .md.wiki:lang(dr) h6 {
+    font-size:0.8em; 
+        color: #818181;
+    padding-left: 28px;
+}
+
+/* END dark theme wiki */

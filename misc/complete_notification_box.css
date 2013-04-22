@@ -1,0 +1,46 @@
+/*Temporary sticky note at top of page */
+
+.listing-page div.content { margin-top: 40px; }
+.listing-page .side .md h3 {
+    position: absolute;
+    text-align: center;
+    font-size: 90% ;
+    top: 75px;
+    left: 18%;
+margin-left: -150px;
+    padding: 3px 7px;
+    background: transparent;
+    border: 1px solid orange;
+    border-radius: 5px;
+    z-index: 1000000;
+}
+.listing-page:lang(dr) div.content:lang(dr) { margin-top: 40px; }
+.listing-page:lang(dr) .side:lang(dr) .md:lang(dr) h3 {
+    position: absolute;
+    text-align: center;
+    font-size: 90% ;
+    top: 75px;
+    left: 18%;
+margin-left: -150px;
+    padding: 3px 7px;
+    background: transparent;
+    border: 1px solid orange;
+    border-radius: 5px;
+    z-index: 1000000;
+    color: #d3d3d3;
+}
+.listing-page:lang(li) div.content:lang(li) { margin-top: 40px; }
+.listing-page:lang(li) .side:lang(li) .md:lang(li) h3 {
+    position: absolute;
+    text-align: center;
+    font-size: 90% ;
+    top: 75px;
+    left: 18%;
+margin-left: -150px;
+    padding: 3px 7px;
+    background: transparent;
+    border: 1px solid orange;
+    border-radius: 5px;
+    z-index: 1000000;
+    color: #000;
+}

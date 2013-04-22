@@ -1,3 +1,5 @@
+
+
 /* CSS by ramma314, adapted from CSS by iamducky with much help from /r/csshelp! */
 
 /**** CSS Information - Yes, you can steal this code, as long as credit is given. ****/
@@ -7,11 +9,11 @@
 
 /* Place this in the sidebar to get a theme selector.
 	The code below can insert images in the sidebar as well.
-##### [](http://reddit.com/r/chronicpain/ "Default Theme!")
+##### [](http://reddit.com/r/migraine/ "Default Theme!")
 
-##### [](http://li.reddit.com/r/chronicpain/ "Light Theme!")
+##### [](http://li.reddit.com/r/migraine/ "Light Theme!")
 
-##### [](http://dr.reddit.com/r/chronicpain/ "Dark Theme!")
+##### [](http://dr.reddit.com/r/migraine/ "Dark Theme!")
 */
 
 /* Universal stylesheet, or things which ignore the lang() setting */
@@ -253,6 +255,16 @@ color: #cdd4d9;
 /*text colors in sidebar*/
 .side:lang(dr) {color: #cdd4d9;}
 
+/* Clicked linked colours for sidebar and announcement box */
+.listing-page:lang(dr) .side:lang(dr) .md:lang(dr) a:visited {
+text-decoration: none;
+color: #937773;
+}
+.listing-page:lang(dr) .side:lang(dr) .md:lang(dr) a:link {
+text-decoration: none;
+color: #4977af;
+}
+
 /* Post info box colours */
 .linkinfo:lang(dr), .titlebox:lang(dr) {
   background-color: transparent;
@@ -469,6 +481,16 @@ color: #5a5555;
 
 /*text colors in sidebar*/
 .side:lang(li) {color: #5a5555;}
+
+/* Clicked linked colours for sidebar and announcement box */
+.listing-page:lang(li) .side:lang(li) .md:lang(li) a:visited {
+text-decoration: none;
+color: #937773;
+}
+.listing-page:lang(li) .side:lang(li) .md:lang(li) a:link {
+text-decoration: none;
+color: #3f5d84;
+}
 
 /* Post info box colours */
 .linkinfo:lang(li), .titlebox:lang(li) {

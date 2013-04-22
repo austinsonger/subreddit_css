@@ -1,0 +1,40 @@
+/*START universal and default them stylsheet */
+/* Selectively indents the wikipage text! For all stylesheets. */
+/*.wiki-page .wiki-page-content .md p,
+.wiki-page .wiki-page-content .md ul{
+    padding: 0 35px;
+    } */
+.wiki-page .md p,
+.wiki-page .md ul {
+   padding-left:12px;
+}
+
+.wiki-page .md h1,
+.wiki-page .md h2,
+.wiki-page .md h3,
+.wiki-page .md h4,
+.wiki-page .md h5,
+.wiki-page .md h6 {
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+/*Header settings, h1-h6 - Max is 6.*/
+body.wiki-page .wiki-page-content .md.wiki h1{
+    font-size:2.0em; 
+    padding-left: -10px;
+}
+body.wiki-page .wiki-page-content .md.wiki h2{
+    font-size:1.4em; 
+    padding-left: 0px;
+}
+body.wiki-page .wiki-page-content .md.wiki h3{
+    font-size:1.0em; 
+    padding-left: 8px;
+}
+/*Third headings in list*/
+body.wiki-page .wiki-page-content .md.wiki h4,
+body.wiki-page .wiki-page-content .md.wiki h5,
+body.wiki-page .wiki-page-content .md.wiki h6 {
+    font-size:0.9em; 
+    padding-left: 12px;
+}

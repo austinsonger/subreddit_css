@@ -181,6 +181,16 @@ color: #cdd4d9;
 /*text colors in sidebar*/
 .side:lang(dr) {color: #cdd4d9;}
 
+/* Clicked linked colours for sidebar and announcement box */
+.listing-page:lang(dr) .side:lang(dr) .md:lang(dr) a:visited {
+text-decoration: none;
+color: #937773;
+}
+.listing-page:lang(dr) .side:lang(dr) .md:lang(dr) a:link {
+text-decoration: none;
+color: #4977af;
+}
+
 /* Post info box colours */
 .linkinfo:lang(dr), .titlebox:lang(dr) {
   background-color: transparent;
